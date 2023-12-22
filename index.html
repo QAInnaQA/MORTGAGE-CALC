@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Dancing+Script:wght@500&family=Indie+Flower&family=Kalam&family=Montserrat:ital,wght@1,500&family=Nunito+Sans:wght@600&family=Philosopher:ital,wght@1,700&family=Roboto+Condensed:ital,wght@0,700;1,700&family=Roboto:ital,wght@1,300&family=Rubik:wght@600&family=Satisfy&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="container">
+        <h1>Mortgage Calculator</h1>
+    <form>   
+        <p>Total Home Price 💰</p>
+        <span>$
+            <input type="text" id="bill" placeholder="price...">
+        </span>
+        <br>
+
+        <span>$
+            <input type="text" id="downpayment" placeholder="downpayment...">
+        </span>
+        <br>
+        
+        <span>%
+            <input type="number"id="interest" placeholder="interest..." step="0.1">
+        </span>
+        <br>
+        <input type="number" id="years" placeholder="years...">
+        <br>
+
+        <button id="btn">Calculate</button>
+
+        <br>
+
+        <div id="showTotal">
+            <div id="monthlyPaymentWithoutInterest">
+                <p>Monthly Payment without Interest:</p>
+                <span>$</span>
+                <span id="monthlyPayment"></span>
+            </div>
+
+            <div id="monthlyInterest">
+                <p>Monthly Interest:</p>
+                <br>
+                <span>$</span>
+                <span id="interestPerMonth"></span>
+            </div>
+
+            <div id="totalMonthlyPayment">
+                <p>Monthly Payment with Interest:</p>
+                <span>$</span>
+                <span id="totalPayment"></span>
+            </div>
+        </div>
+    </form> 
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>    
+<script src="index.js"></script>
+</body>
+</html>
